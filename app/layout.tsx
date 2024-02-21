@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="min-w-[768px]">
+      <head>
+        <meta name="viewport" content="width=device-width" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         <section className="bg-black text-white min-h-screen">
