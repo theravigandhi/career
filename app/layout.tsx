@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        <section className="bg-black text-white min-h-screen">
+          {children}
+        </section>
+        <footer>
+          <div className="w-full text-center mx-auto font-medium bg-purple-300 text-black">
+            © 2024 Career Map , All rights reserved
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
