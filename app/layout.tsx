@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="min-w-[768px]">
       <body className={inter.className}>
         <Navbar />
         <section className="bg-black text-white min-h-screen">
