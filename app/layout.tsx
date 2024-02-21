@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="min-w-[768px]">
+    <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width" />
       </head>
